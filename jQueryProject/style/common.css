@@ -4,7 +4,7 @@ html, body {
   width: 100%;
 }
 
-html, body, ul, li, p, h1, h2, h3, img, input, a, form, dl, dt, dd {
+html, body, ul, li, p, h1, h2, h3, h4, img, input, a, form, dl, dt, dd {
   margin: 0;
   padding: 0;
   /*清楚所选标签的默认padding margin*/

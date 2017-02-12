@@ -148,6 +148,10 @@
   padding-top: 4px;
 }
 
+.top3-nav img {
+  height: 30px;
+}
+
 .classify {
   float: left;
   position: relative;
@@ -178,6 +182,211 @@
 }
 
 /*!以上为头部css代码*/
+/*主页主体部分开始*/
+.main-main {
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-banner {
+  overflow: hidden;
+}
+
+.banner-left {
+  position: relative;
+  padding-top: 10px;
+  width: 236px;
+  height: 531px;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
+.banner-left-list {
+  width: 224px;
+  height: 520px;
+  padding-left: 10px;
+  overflow: hidden;
+}
+
+.banner-left-list .list-1 {
+  width: 225px;
+}
+
+/*!hover时出现的div*/
+.banner-show {
+  position: absolute;
+  top: -2px;
+  right: -724px;
+  width: 721px;
+  height: 530px;
+  border: 1px solid red;
+  overflow: hidden;
+  display: none;
+  z-index: 1000;
+  opacity: 1;
+  background: #fff;
+}
+
+.banner-show-list {
+  overflow: hidden;
+  float: left;
+  padding: 10px 0 0 10px;
+  width: 170px;
+  height: 520px;
+}
+
+.bann-img {
+  float: left;
+}
+
+.banner-li {
+  margin: 5px 0 16px 0;
+  width: 160px;
+}
+
+.banner-li dt a {
+  color: #000000;
+  font: bold 14px "Microsoft YaHei" !important;
+}
+
+.banner-li dd a {
+  padding: 5px 5px 0 0;
+  display: inline-block;
+  font: 14px "Microsoft YaHei" !important;
+  overflow: hidden;
+  color: #777777;
+}
+
+.bann-img h3 {
+  margin: 10px 10px;
+}
+
+.bann-img-list {
+  width: 540px;
+  overflow: hidden;
+}
+
+.bann-img-list li {
+  float: left;
+  margin: 10px;
+}
+
+/*!结束*/
+.banner-left-list .list-1 dd a {
+  padding: 5px 5px 0 0;
+  display: inline-block;
+  font: 14px "Microsoft YaHei" !important;
+  overflow: hidden;
+  color: #777777;
+}
+
+.banner-left-list .list-1 dt {
+  width: 214px;
+  height: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.banner-left-list .list-1 dt a {
+  color: #000000;
+  font: bold 14px "Microsoft YaHei" !important;
+}
+
+.list-1 i {
+  font: bolder 14px '微软雅黑';
+  color: red;
+  float: right;
+  margin-right: 8px;
+}
+
+/*!-----------轮播图代码*/
+.flash-img {
+  overflow: hidden;
+  position: relative;
+  width: 720px;
+  height: 530px;
+}
+
+.img-left, .img-right {
+  display: none;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  width: 40px;
+  height: 100px;
+  line-height: 100px;
+  z-index: 100;
+  font-size: 40px;
+  margin-top: -50px;
+  background: #000;
+  opacity: .5;
+}
+
+.img-left {
+  top: 50%;
+  left: 6px;
+}
+
+.img-right {
+  top: 50%;
+  right: 0;
+}
+
+#img-lunbo img {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  display: none;
+}
+
+#img-lun-list {
+  position: absolute;
+  bottom: 0;
+  left: 6px;
+  width: 704px;
+  height: 41px;
+  border: 1px solid #ccc;
+  padding: 0 4px;
+}
+
+#img-lun-list li {
+  color: #7D6666;
+  text-align: center;
+  font: bold 14px "微软雅黑";
+  float: left;
+  padding: 0 34px;
+  line-height: 41px;
+  box-sizing: border-box;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#img-lunbo .active {
+  display: block;
+}
+
+#img-lun-list .active {
+  line-height: 36px;
+  border-top: 3px solid red;
+  color: #000;
+}
+
+#img-lun-list em {
+  font-style: normal;
+  color: #DCDCDC;
+  float: right;
+  margin-right: -36px;
+  display: block;
+}
+
+.banner-right {
+  margin-right: 10px;
+  width: 236px;
+  overflow: hidden;
+  margin: 6px 15px 0 0;
+}
+
 /*! 以下为尾部css代码*/
 .footer {
   width: 100%;
@@ -229,4 +438,27 @@
   font-weight: bold;
   margin: 15px 0;
   color: #787878;
+}
+
+.go-back {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  width: 60px;
+  height: 137px;
+}
+
+.go-back p {
+  width: 28px;
+  height: 78px;
+  display: none;
+  cursor: pointer;
+  background: url(../images/spirit_pic.png) no-repeat -14px -1066px;
+}
+
+.go-back a {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  margin-left: -13px;
 }
