@@ -1,0 +1,273 @@
+@charset "UTF-8";
+.header {
+  width: 100%;
+}
+
+.login-logo {
+  width: 980px;
+  height: 100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.login-main {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.login-banner {
+  float: left;
+}
+
+.login-aside {
+  float: left;
+  width: 340px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+#login-way {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 40px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#login-way li {
+  position: relative;
+  width: 110px;
+  line-height: 34px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+#login-way li a {
+  font-weight: bolder;
+  font: 14px "微软雅黑";
+}
+
+#login-way li:nth-child(2) {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+#login-way .active {
+  top: -3px;
+  height: 40px;
+  border-top: 2px solid red;
+  border-bottom: none !important;
+}
+
+.login-1 {
+  font: 14px "微软雅黑";
+  width: 245px;
+  margin: 20px auto;
+}
+
+.login-name {
+  width: 260px;
+  height: 30px;
+  display: flex;
+  font: 14px "微软雅黑";
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.login-pass {
+  width: 267px;
+  height: 30px;
+  display: flex;
+  font: 14px "微软雅黑";
+  margin: 0 28px;
+  justify-content: space-around;
+}
+
+.login-pass input {
+  margin-left: 10px;
+}
+
+.login-name p {
+  line-height: 30px;
+}
+
+.err-name, .err-pass {
+  width: 100%;
+  display: none;
+  text-align: center;
+  margin: 0 0 0 10px;
+  color: #666;
+}
+
+.wrap-span {
+  width: 100%;
+  height: 25px;
+  padding: 6px 0 0 0;
+}
+
+.account {
+  display: none;
+}
+
+.forms .active {
+  display: block;
+}
+
+.check {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.check input {
+  width: 60px;
+  height: 30px;
+  margin-left: 15px;
+}
+
+.check div:nth-of-type(1) {
+  width: 60px;
+  margin-left: 43px;
+  font: 14px "微软雅黑";
+}
+
+.check img {
+  width: 95px;
+}
+
+.cBox {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.cBox input {
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+.btn-logo input {
+  width: 104px;
+  line-height: 34px;
+  background: url(../images/buttons.png) no-repeat;
+  border-radius: 3px;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+
+.btn-logo input:hover {
+  background: url(../images/buttons.png) no-repeat 0 -42px;
+}
+
+.btn-logo {
+  text-align: center;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ccc;
+  margin: 0 15px 0 15px;
+}
+
+.btn-logo a {
+  text-decoration: underline;
+  color: black;
+}
+
+.btn-logo a:hover {
+  color: orange;
+}
+
+.login-reg {
+  width: 100%;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-reg a {
+  display: block;
+  width: 70px;
+  line-height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.login-reg a:hover {
+  color: orange;
+}
+
+.lianjie {
+  border: 1px solid #efefef;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  width: 300px;
+}
+
+.lianjie p {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background: #EFEFEF;
+  padding-left: 5px;
+}
+
+.lianjie ul {
+  overflow: hidden;
+}
+
+.lianjie ul li {
+  display: flex;
+  width: 100px;
+  height: 32px;
+  line-height: 32px;
+  float: left;
+  text-align: center;
+}
+
+.lianjie ul li span {
+  margin: 5px 10px;
+  display: block !important;
+  float: left;
+  width: 22px;
+  height: 22px;
+  background: url(../images/icon_login.png) 1000px 1000px no-repeat;
+}
+
+.lianjie ul li a:hover {
+  color: orange;
+}
+
+#span-1 {
+  background-position: -3px -9px;
+}
+
+#span-2 {
+  background-position: -3px -59px;
+}
+
+#span-3 {
+  background-position: -3px -105px;
+}
+
+#span-4 {
+  background-position: -3px -149px;
+}
+
+#span-5 {
+  background-position: -3px -199px;
+}
+
+.lianjie ul li a {
+  margin-top: 8px;
+}
+
+.foot {
+  margin: 10px 0;
+}
+
+.foot p {
+  text-align: center;
+}

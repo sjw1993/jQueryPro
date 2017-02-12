@@ -1,0 +1,87 @@
+.reg-top{
+    width: 100%;height: 26px;
+    border-bottom: 2px solid #6E6E6E;
+}
+.reg-top a{
+    font: 16px "微软雅黑";
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    height: 26px;
+    width: 160px;
+    color: #fff;
+    margin-top: 0;
+    line-height: 28px;
+    background: url(../images/buttonSkin.png) 0 -450px no-repeat;
+}
+.reg-main{
+    width: 980px;height: 328px;border: 1px solid #CCCCCC;
+    margin-top: 10px;
+    }
+.reg-left{
+    width: 743px;
+    padding: 20px 0 30px 15px;
+}
+.reg-left p:first-child{
+    width: 700px;
+    font-size: 14px;
+    text-indent: 20px;
+    line-height: 30px;
+    margin-left: 15px;
+    border-bottom: 1px dotted #E6E6E6;
+}
+.reg-name{
+    width: 120px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #666;
+    text-align: right;
+}
+.regname{
+    overflow: hidden;
+    margin: 12px 0px;
+}
+.reg-text input{
+    border: 1px solid #ABABAB;
+    width: 240px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 5px 0 0;
+    margin: 0 10px 0 0;
+}
+.reg-text{overflow: hidden;}
+.reg-text p{
+    margin: 10px 0 0 0;
+    color: red;
+}
+.reg-text .re-check{
+    width: 100px;
+    vertical-align: middle;
+}
+.reg-text img{vertical-align: middle;}
+.tips{
+    width: 305px;
+    line-height: 13px;
+    float: right;
+    display: block;
+    color: #999;
+}
+.send .send-1{
+    margin: 0 0 0 120px;
+    cursor: pointer;
+    display: block;
+    width: 152px;
+    height: 34px;
+    background: url(../images/buttons.png) -226px -168px no-repeat;
+}
+.send .send-1:hover{
+    background-position: -226px -210px;
+}
+.reg-right{
+    width: 219px;
+    height: 320px;
+    background: url(../images/bgowelcometext.png);
+}
+.reg-right h3,.reg-right p{
+display: none;
+}
