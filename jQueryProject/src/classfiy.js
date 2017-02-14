@@ -78,16 +78,18 @@ $(function(){
 		
 		
 		//点击左侧树形目录时 小图标变化
-		
-		var oEm=$('.classify-man em');
 		//男装
-		var jia=$('.classify-man').find('b'),
-		oDdshow= $('.classify-left dl');
-		
+		//一级目录
+		var oEm=$('.classify-left').find('em');
+		var oEmIndex=0;//选中点击第几个一级目录
+		var jia=$('.classify-left li').find('b');//选择b 也就是‘+’
 		oEm.click(function(){
-			var emIndex=$(this).attr('index'),//自定义属性
-				oEmIndex = $(this).index();
-				console.log(emIndex);
+			var emIndex=$(this).attr('index');//自定义属性相当于开关
+//				oEmIndex = $(this).index();
+				oEmIndex = oEm.index($(this));//选择了第几个一级目录
+				var oDdshow= $('.classify-left li').eq(oEmIndex).find('dl');
+				jia=$('.classify-left li').eq(oEmIndex).find('b');//重新选择b 在一级目录的基础上
+//				console.log(oEmIndex);
 			if(emIndex=='0'){
 				oDdshow.css({
 					display:'block'
@@ -101,9 +103,13 @@ $(function(){
 				
 			}
 		});
+		//二级目录
 		jia.bind('click',function(){
+//			console.log(oEmIndex);
+//			console.log(jia);
 			var oJia=$(this).text(),
 				iIndex=jia.index($(this));
+				var oDdshow= $('.classify-left li').eq(oEmIndex).find('dl');
 			if(oJia=='+'){
 				$(this).text('-');
 				oDdshow.eq(iIndex).find('dd').css({
@@ -118,272 +124,52 @@ $(function(){
 			};
 		});
 		
-		//女装
-		var oEm=$('.classify-woman em');
-		var jia=$('.classify-woman').find('b'),
-		oDdshow= $('.classify-left dl');
-		oEm.click(function(){
-			var emIndex=$(this).attr('index'),//自定义属性
-				oEmIndex = $(this).index();
-				console.log(emIndex);
-			if(emIndex=='0'){
-				oDdshow.css({
-					display:'block'
-				});
-				$(this).attr('index','1');
-			}else{
-				oDdshow.css({
-					display:'none'
-				});
-				$(this).attr('index','0');
-				
-			}
-		});
-		jia.bind('click',function(){
-			var oJia=$(this).text(),
-				iIndex=jia.index($(this));
-			if(oJia=='+'){
-				$(this).text('-');
-				oDdshow.eq(iIndex).find('dd').css({
-					display:'block'
-				});
-			};
-			if(oJia=='-'){
-				$(this).text('+');
-				oDdshow.eq(iIndex).find('dd').css({
-					display:'none'
-				});
-			};
-		});
+		//收起 缩放功能
 		
-		//童装
-		var oEm=$('.classify-child em');
-		var jia=$('.classify-child').find('b'),
-		oDdshow= $('.classify-left dl');
-		oEm.click(function(){
-			var emIndex=$(this).attr('index'),//自定义属性
-				oEmIndex = $(this).index();
-				console.log(emIndex);
-			if(emIndex=='0'){
-				oDdshow.css({
-					display:'block'
+		var btnDown = $('.pinpai div'),
+			oI = $('.pinpai div i'),
+			oP= $('.pinpai div p'),
+			ulDown  = $('.pinpai ul');
+			btnDown.click(function(){
+				var indexChk=btnDown.attr('index');
+				console.log(indexChk);
+				if(indexChk=='0'){
+					ulDown.stop().animate({
+					height:104
 				});
-				$(this).attr('index','1');
-			}else{
-				oDdshow.css({
-					display:'none'
+					oI[0].style.backgroundPosition='0 -234px';
+					oP.text('收起');
+				btnDown.attr('index',1);
+				}else{
+					ulDown.stop().animate({
+					height:25
 				});
-				$(this).attr('index','0');
+				oI[0].style.backgroundPosition='0 -259px';
+				oP.text('更多');
+				btnDown.attr('index',0);
+				}
 				
-			}
-		});
-		jia.bind('click',function(){
-			var oJia=$(this).text(),
-				iIndex=jia.index($(this));
-			if(oJia=='+'){
-				$(this).text('-');
-				oDdshow.eq(iIndex).find('dd').css({
-					display:'block'
-				});
-			};
-			if(oJia=='-'){
-				$(this).text('+');
-				oDdshow.eq(iIndex).find('dd').css({
-					display:'none'
-				});
-			};
-		});
-		
-		//鞋
-		var oEm=$('.classify-xie em');
-		var jia=$('.classify-xie').find('b'),
-		oDdshow= $('.classify-left dl');
-		oEm.click(function(){
-			var emIndex=$(this).attr('index'),//自定义属性
-				oEmIndex = $(this).index();
-				console.log(emIndex);
-			if(emIndex=='0'){
-				oDdshow.css({
-					display:'block'
-				});
-				$(this).attr('index','1');
-			}else{
-				oDdshow.css({
-					display:'none'
-				});
-				$(this).attr('index','0');
 				
-			}
-		});
-		jia.bind('click',function(){
-			var oJia=$(this).text(),
-				iIndex=jia.index($(this));
-			if(oJia=='+'){
-				$(this).text('-');
-				oDdshow.eq(iIndex).find('dd').css({
-					display:'block'
-				});
-			};
-			if(oJia=='-'){
-				$(this).text('+');
-				oDdshow.eq(iIndex).find('dd').css({
-					display:'none'
-				});
-			};
-		});
-		
-		//箱包
-		var oEm=$('.classify-bao em');
-		var jia=$('.classify-bao').find('b'),
-		oDdshow= $('.classify-left dl');
-		oEm.click(function(){
-			var emIndex=$(this).attr('index'),//自定义属性
-				oEmIndex = $(this).index();
-				console.log(emIndex);
-			if(emIndex=='0'){
-				oDdshow.css({
-					display:'block'
-				});
-				$(this).attr('index','1');
-			}else{
-				oDdshow.css({
-					display:'none'
-				});
-				$(this).attr('index','0');
+			});
+			
+			//高级筛选 鼠标悬停效果
+			
+			var oGaojiLi   = $('.screen').children('li'),
+				oGaojiShow = $('.gaojishow');
 				
-			}
-		});
-		jia.bind('click',function(){
-			var oJia=$(this).text(),
-				iIndex=jia.index($(this));
-			if(oJia=='+'){
-				$(this).text('-');
-				oDdshow.eq(iIndex).find('dd').css({
-					display:'block'
+				oGaojiLi.hover(function(){
+					console.log(oGaojiLi);
+					var iIndex=oGaojiLi.index($(this));
+						oGaojiShow.eq(iIndex).css({
+							display:'block'
+						});
+				},function(){
+					var iIndex=oGaojiLi.index($(this));
+						oGaojiShow.eq(iIndex).css({
+							display:'none'
+						});
 				});
-			};
-			if(oJia=='-'){
-				$(this).text('+');
-				oDdshow.eq(iIndex).find('dd').css({
-					display:'none'
-				});
-			};
-		});
-		
-		//内衣
-		var oEm=$('.classify-yi em');
-		var jia=$('.classify-yi').find('b'),
-		oDdshow= $('.classify-left dl');
-		oEm.click(function(){
-			var emIndex=$(this).attr('index'),//自定义属性
-				oEmIndex = $(this).index();
-				console.log(emIndex);
-			if(emIndex=='0'){
-				oDdshow.css({
-					display:'block'
-				});
-				$(this).attr('index','1');
-			}else{
-				oDdshow.css({
-					display:'none'
-				});
-				$(this).attr('index','0');
-				
-			}
-		});
-		jia.bind('click',function(){
-			var oJia=$(this).text(),
-				iIndex=jia.index($(this));
-			if(oJia=='+'){
-				$(this).text('-');
-				oDdshow.eq(iIndex).find('dd').css({
-					display:'block'
-				});
-			};
-			if(oJia=='-'){
-				$(this).text('+');
-				oDdshow.eq(iIndex).find('dd').css({
-					display:'none'
-				});
-			};
-		});
-		
-		//配饰
-		var oEm=$('.classify-pei em');
-		var jia=$('.classify-pei').find('b'),
-		oDdshow= $('.classify-left dl');
-		oEm.click(function(){
-			var emIndex=$(this).attr('index'),//自定义属性
-				oEmIndex = $(this).index();
-				console.log(emIndex);
-			if(emIndex=='0'){
-				oDdshow.css({
-					display:'block'
-				});
-				$(this).attr('index','1');
-			}else{
-				oDdshow.css({
-					display:'none'
-				});
-				$(this).attr('index','0');
-				
-			}
-		});
-		jia.bind('click',function(){
-			var oJia=$(this).text(),
-				iIndex=jia.index($(this));
-			if(oJia=='+'){
-				$(this).text('-');
-				oDdshow.eq(iIndex).find('dd').css({
-					display:'block'
-				});
-			};
-			if(oJia=='-'){
-				$(this).text('+');
-				oDdshow.eq(iIndex).find('dd').css({
-					display:'none'
-				});
-			};
-		});
-		
-		//生活
-		var oEm=$('.classify-life em');
-		var jia=$('.classify-life').find('b'),
-		oDdshow= $('.classify-left dl');
-		oEm.click(function(){
-			var emIndex=$(this).attr('index'),//自定义属性
-				oEmIndex = $(this).index();
-				console.log(emIndex);
-			if(emIndex=='0'){
-				oDdshow.css({
-					display:'block'
-				});
-				$(this).attr('index','1');
-			}else{
-				oDdshow.css({
-					display:'none'
-				});
-				$(this).attr('index','0');
-				
-			}
-		});
-		jia.bind('click',function(){
-			var oJia=$(this).text(),
-				iIndex=jia.index($(this));
-			if(oJia=='+'){
-				$(this).text('-');
-				oDdshow.eq(iIndex).find('dd').css({
-					display:'block'
-				});
-			};
-			if(oJia=='-'){
-				$(this).text('+');
-				oDdshow.eq(iIndex).find('dd').css({
-					display:'none'
-				});
-			};
-		});
-		
+			
 		
 	
 	

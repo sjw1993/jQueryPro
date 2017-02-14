@@ -1,4 +1,5 @@
 
+//---侧栏菜单开始 这个是与购买页相同的样式 但和主页有所不同
 .banner-left{
     display: none;
     position: absolute;
@@ -78,7 +79,7 @@
 .banner-left-list .list-1 dt a{color: #000000;
 font:bold 14px "Microsoft YaHei" !important;}
 .list-1 i{font:bolder 14px '微软雅黑';color: red;float: right;margin-right: 8px;}
-
+/*侧栏菜单结束*/
 
 //分类页主体开始
 
@@ -150,4 +151,261 @@ font:bold 14px "Microsoft YaHei" !important;}
 .classify-left dl dd{
     margin-top: 10px;
     display: none;
+}
+
+/*分类右侧菜单*/
+.classify-r{
+        float: right;
+}
+.classify-right{
+  float: right;
+    width: 980px;
+    border: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+.classify-right-top{
+    width: 978px;
+    background-color: #F7F7F7;
+    padding: 8px 0;
+    margin: 10 auto;
+    display: flex;
+    overflow: hidden;
+}
+.classify-right-top p{
+    margin-left: 10px;
+}
+.classify-right-top li{
+    padding: 0 17px;
+    border-right: 1px solid #ccc;
+    float: left;
+}
+.classify-right-top li:last-child{
+    border:none;
+}
+.classify-right-top li a:hover{
+    color: #ccc;
+}
+.classify-right-center{
+    width: 978px;
+//  overflow: hidden;
+}
+.c-r-c-t{
+    width: 958px;
+    float: left;
+    margin: 10px 0 0 20px;
+}
+.c-r-c-t  span{
+    display: block;
+    width: 50px;
+    line-height: 21px;
+    float: left;
+    border-right: 1px #ccc solid;
+    }
+    
+.c-r-c-t>ul{
+    float: left;
+    overflow: hidden;
+    width: 818px;
+    height: 25px;
+}
+.c-r-c-t>ul li{
+    float: left;
+}
+.jiage ul li:last-child{
+    margin-left: 60px;
+}
+.jiage ul li:last-child input{
+    width: 45px;
+    height: 20px;
+    border: 1px solid #ccc;
+}
+.c-r-c-t li a{
+    display: block;
+    margin: 1px 0 10px 20px;
+}
+.c-r-c-t>div{ 
+    float: left;
+    height: 25px;
+    width: 60px; 
+    display: flex;
+    cursor: pointer;
+    justify-content: space-around;
+}
+.c-r-c-t div i{
+    display: block;
+    margin-top: 5px;
+    width: 12px;
+    height: 6px;
+    background: url(../images/Veo_mbshop_spirit_pic.png) no-repeat 0 -259px;
+}
+/*高级筛选*/
+
+.gaoji>ul>li{
+    display: flex;
+    margin-left: 20px;
+    width:92px ;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #DCDCDC;
+    border-radius: 3px;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+.gaoji i{
+    display: block;
+    width: 8px;
+    height: 4px;
+    background: url(../images/Veo_mbshop_spirit_pic.png) no-repeat 0 -94px;
+    
+}
+.gaojishow{
+    position: absolute;
+    background: #fff;
+    top: 23px;
+    left: -21px;
+    z-index: 100;
+    width: 980px;
+    display: none;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 #000;
+}
+.gaoji{
+    position: relative;
+}
+.gaoji>ul{
+    height: auto;
+}
+.gaojishow ul{
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+.gaojishow li{
+    background: #fff;
+    float: left;
+}
+.gaojishow li a{
+    display: flex;
+    justify-content: center;
+    width: 82px;
+    margin-top: 10px;
+    margin-left: 10px;
+    line-height: 23px;
+    height: 23px;
+}
+.gaojishow li a:hover{
+    background: #F0F0F0;
+}
+.gaojishow b{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.classify-r h3{
+    width: 980px;
+    height: 34px;
+    font: 400 12px/34px "微软雅黑","黑体","宋体",verdana;
+}
+.classify-r-center{
+   
+}
+.classify-r-center ul{
+    width: 489px;
+    float: left;
+    overflow: hidden;
+}
+.classify-r-center li{
+    margin-right: 3px;
+    float: left;
+}
+.classify-r-center li a{
+    position: relative;
+    display: block;
+    background: #F0F0F0;
+    padding: 13px 33px;
+}
+.classify-r-center li a:hover{
+    background: #FF7A72;
+    color: #fff;
+}
+.classify-r-center .active{
+    background: #F8584F;
+    color: #fff;
+}
+.classify-r-center i{
+    position: absolute;
+    right:11px;
+    top: 15px;
+    display:inline-block;
+    width: 6px;
+    height: 12px;
+    background: url(../images/jiantou.png) no-repeat 0 -54px;
+}
+.classify-r-center p{
+    padding-right: 10px;
+    width: 492px;
+    float: left;
+    background: #F0F0F0;
+    padding: 13px 0;
+    text-align: center;
+}
+.classify-r-center p input{
+    margin: 1px 5px 0 5px;
+}
+
+//中间图片内容
+
+.classify-big{
+    overflow: hidden;
+    width: 980px;
+}
+.classify-big li{
+    width: 230px;
+    margin: 10px 15px 0 0;
+    float: left;
+}
+.classify-big p{
+    margin: 5px 0;
+    font: 14px "微软雅黑";
+}
+.classify-big li img{
+    width: 230px;
+
+}
+.classify-big li label{
+    float: right;
+    width: 40px;
+    height: 18px;
+    line-height: 18px;
+    border: 1px solid #f8584f;
+    text-align: center;
+    color: #f8584f;
+    background: #fdedec;
+}
+.class-bottom{
+    width: 980px;
+}
+.class-bottom ul{
+    width: 400px;
+    overflow: hidden;
+    margin: 30px auto;
+}
+.class-bottom li{
+    margin: 0 5px;
+    float: left;
+    padding:5px 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+.class-bottom .active{
+    border-color: red;
+}
+.class-bottom li:hover{
+    border-color: red;
+    color: palevioletred;
 }
