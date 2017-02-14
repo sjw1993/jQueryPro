@@ -1,160 +1,8 @@
-.top1{
-    width: 100%;
-    height: 32px;
-    border-bottom: 1px solid #dcdcdc;
-}
-.top-nav{
-    height: 30px;
-    padding-bottom: 2px;
-}
-.top-nav p{
-    line-height: 32px;
-    color: #999;
-}
-.top-nav ul li{
-    float: left;
-    height: 30px;
-    line-height: 30px;padding: 0 15px;
-}
-.top-nav ul li a{
-    display: block;
-    width: 100%;
-    line-height:30px ;
-    color: #999;
-}
-.top-nav ul li a:hover{
-    color: #000;
-}
-.top-nav  ul li:nth-of-type(5) img{
-    height: 15px;
-    vertical-align: middle;
-}
-.top-nav  ul li:nth-of-type(5) span{
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
-    width: 0; 
-}
-.top2{
-       width: 100%;
-}
-.logo{
-    margin-left:-23px;
-    width: 260px;
-    float: left;
-}
-.logo a{
-    height: 100%;
-    display: block;
-}
-.search{
-    width: 378px;
-    height: 34px;
-    display: flex;
-    float: left;
-    margin-top: 10px;
-    margin-left: 22px;
-    padding-top: 15px;
-    overflow: hidden;
-}
-.search input[type=text]{
-    width: 290px;
-    border: 1px solid red;
-    line-height: 22px;
-    color: #666;
-    outline: none;
-}
-.search i{
-    width: 30px;
-    line-height: 34px;
-    color: #fff;
-    text-align: center;
-    cursor: pointer;
-      background: #D51819;
-}
-.search button{
-    background: #D51819;border: none;
-    outline: none;width: 40px;
-    text-align: center;
-    font-weight: 700;
-    color: #fff;
-    cursor: pointer;
-}
-.top2-nav{
-    margin-top: 25px;
-    float: left;
-}
-.top2-nav li{
-    line-height: 34px;
-    float: left;
-}
-.top2-nav li a:hover{
-    color: #666;
-}
-.top2-nav li span{
-    padding: 0 10px;
-    color: #F2E5DE;
-}
-.package{
-    float: right;
-    width: 150px;
-    height: 55px;
-    background: url(../images/spirit_pic.png) 0 -410px no-repeat;
-}
-.package a{    
-    margin-left: 50px;
-    font: 400 14px "微软雅黑","宋体";
-    margin-top: 27px;
-    float: left;}
-
-.classify{
-    width: 212px;
-    padding: 0 12px;
-    height: 40px;
-}
-
-.top3-nav{
-    width: 100%;
-    height: 40px;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 30px;
-    border-bottom: 1px solid #d51819;
-    padding-top: 4px;
-}
-.top3-nav img{height: 30px;}
-.classify{
-    float: left;
-    position: relative;
-    z-index: 899;
-    padding: 0 12px;
-    height: 40px;
-    width: 212px;
-    line-height: 40px;
-    cursor: pointer;
-    color: #fff;
-    background: #d51819;
-}
-
-.classify span{
-    line-height: 40px;
-    cursor: pointer;
-    color: #fff;
-}
-.nav-main{
-    height: 40px;
-    float: left;
-}
-.nav-main li{
-    float: left;
-    margin:-5px 10px 0 15px;
-}
-
-/*!以上为头部css代码*/
 
 /*主页主体部分开始*/
 .main-main{width: 100%;overflow: hidden;}
 .main-banner{overflow: hidden;}
+
 .banner-left{
     position: relative;
     padding-top: 10px;
@@ -212,6 +60,7 @@
 .bann-img-list{width: 540px;overflow: hidden;}
 .bann-img-list li{float: left;margin: 10px;}
 /*!结束*/
+
 
 .banner-left-list .list-1 dd a{
     padding: 5px 5px 0 0;
@@ -304,68 +153,168 @@ font:bold 14px "Microsoft YaHei" !important;}
         margin-right: 10px;
         width: 236px;
         overflow: hidden;
-        margin: 6px 15px 0 0;}
-/*! 以下为尾部css代码*/
-.footer{
-    width: 100%;
-    margin-top: 40px;
-    background: url(../images/footer.png) repeat-x;
-    background-color: #fff !important;
-}
-.footer-nav{
-    height: 320px;
-}
-.guide{
+        margin: 6px 15px 0 0;
+        }
+        
+        
+/*!轮播图部分结束*/
+       
+/*main-1部分开始*/
+.main-1{
+    position: relative;
+    height: 132px;
     overflow: hidden;
-    width: 1200px;
-    float: none;
-    margin: 0 auto;
-    padding-top: 11px;
+    margin: 10px auto;
 }
-.guide dl{
-    float: left;
-    width: 200px;
-}
-.guide dt{
-    padding-bottom: 15px;
-    width: auto;
-    clear: right;
-    font: 700 14px "微软雅黑","黑体","微软雅黑","宋体",verdana;
-    color: #231815;
-}
-.guide dd{
-    width: 200px;
-    padding-top: 13px;
-}
-.footer-nav hr{
-    margin-top: 25px;
-}
-.copyright{
-    text-align: center;
-}
-.copyright p{
-    font: 14px "微软雅黑";
-    font-weight: bold;
-    margin: 15px 0;
-    color: #787878;
-}
-.go-back{
-    position: fixed;
-    bottom: 30px;
-    right: 20px;
-    width: 60px;
-    height: 137px;
-}
-.go-back p{
-    width: 28px;
-    height: 78px;
-    display: none;
-    cursor: pointer;
-    background: url(../images/spirit_pic.png) no-repeat -14px -1066px;
-}
-.go-back a{display: block;
+.main-1-left,.main-1-right{
     position: absolute;
-    bottom: 0;
-    margin-left: -13px;
+    color: #fff;
+    font: 30px "微软雅黑";
+    text-align: center;
+    cursor: pointer;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #000000;
+    opacity: .3;
+    z-index: 1000;
 }
+/* 左按钮*/
+.main-1-left{
+    left:0;
+    top: 50%;
+    margin-top: -30px;
+}
+.main-1-right{
+    right:5px;
+    top: 50%;
+    margin-top: -30px;
+}
+.main-1-list{
+    position: absolute;
+    width: 3000px;
+    overflow: hidden;
+}
+.main-1-list li{
+    margin: 0 5px;
+    float: left;
+}
+
+/*main-1部分结束*/
+
+/*main-2部分开始*/
+.main-2-man{
+    widows: 100%;
+    height: 540px;
+    overflow: hidden;
+}
+.main-2-man-top{
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+.m-m-t-left{
+    display: block;
+    height: 100%;
+    }
+    
+    .main-lists{
+        display: none;
+    }
+    .sanzhe{
+        overflow: hidden;
+        width: 977px;
+        height: 476px;
+    }
+    .sanzhe div{
+        cursor: pointer;
+        float: left;
+        width: 170px;
+        height: 230px;
+        margin-left: 24px;
+        }
+        .zhe-1{
+            margin-left: 5px;
+            margin-top: 10px;
+            margin-right: 20px;
+            color: red;
+        }
+     .sanzhe img{
+         width: 170px;
+     }
+     .sanzhe p{
+         height: 32px;
+         margin: 0 0 0 11px;
+     }
+    .main-2-man .active{
+        display: block
+    }
+.m-m-t-right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 600px;
+    }
+    .m-m-t-right ul{
+        float: right;
+        width: 340px;
+        height: 40px;
+        padding-top: 20px;
+        overflow: hidden;
+    }
+    .m-m-t-right ul li{
+        float: left;
+        overflow: hidden;
+        cursor: pointer;
+         color: #999;
+        font: bold 14px "微软雅黑";
+        line-height: 30px;
+        padding: 0 19px;
+    }
+
+    .m-m-t-right ul .active{
+        color: red;
+        border-bottom: 2px solid red;
+    }
+    .m-m-t-right li i{
+        display: block;
+        margin-right: -20px;
+        float: right;
+        color: #EBE2DC;
+        }
+        
+        .main-2-man-left{
+           width: 240px;
+        }
+        .main-2-man-left ul{
+            overflow: hidden;
+        }
+        .main-2-man-left ul li{
+            float: left;
+            text-align: center;
+            line-height: 35px;
+            width: 110px;
+        }
+        .main-2-man-left ul li a{
+            font: 14px "微软雅黑";
+            color: #000;
+        }
+        .main-2-man-left div{
+            overflow: hidden;
+        }
+        .main-2-man-left div img{
+           float: left;
+           margin: 13px 0;
+        }
+        .main-2-man-center{
+            overflow: hidden;
+            width: 240px;
+        }
+        .main-2-man-right{
+            width: 730px;
+        }
+/*main-2部分结束*/
+
 

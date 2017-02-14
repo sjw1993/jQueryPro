@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="style/login.css"/>
 			<link rel="stylesheet" type="text/css" href="style/register.css"/>
 		<script src="js/jquery.js"></script>
+		<script src="js/register.js"></script>
 <!--		<script src="js/register.js"></script>-->
 	</head>
 <body>
@@ -29,9 +30,17 @@
 							用户名：
 						</div>
 						<div class="reg-text fl">
-							<input type="text" />
+							<input type="text" name="username" autocomplete="off"/>
 							<span class="tips">4-20个字符，一个汉字为两个字符，推荐使用中文会会员名字。一旦注册成功会员名将不能修改。</span>
-							<p>用户名不能为空</p>
+							<!--<div class="namenull" style="height: 16px;width: 562px;">-->
+							<p class="namenotnull"> 
+								<span>
+								用户名不能为空
+								</span>
+							</p>
+							<!--<p>格式错误</p>-->
+							<!--</div>-->
+							
 						</div>
 					</div>
 					
@@ -40,9 +49,9 @@
 							手机号：
 						</div>
 						<div class="reg-text fl">
-							<input type="text" />
+							<input type="text" name='phone' class="phone" autocomplete="off"/>
 							<span class="tips">请输入您的手机号码</span>
-							<p>手机号不能为空</p>
+							<p class="phonenull">手机号不能为空</p>
 						</div>
 					</div>
 					
@@ -51,7 +60,7 @@
 							验证码：
 						</div>
 						<div class="reg-text fl">
-							<input type="text" class="re-check"/>
+							<input type="text" class="re-check" name="chk"/>
 							<img src="https://passport.banggo.com:443/CASServer//custom/loginCode.do?time=1486821112587"/>
 							<a href="#">换一张</a>
 							<p>手机号不能为空</p>
