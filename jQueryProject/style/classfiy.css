@@ -1,0 +1,190 @@
+@charset "UTF-8";
+.banner-left {
+  display: none;
+  position: absolute;
+  padding-top: 10px;
+  width: 236px;
+  height: 531px;
+  left: 0px;
+  z-index: 100;
+  background: #fff;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
+.banner-left-list {
+  width: 224px;
+  height: 520px;
+  padding-left: 10px;
+  overflow: hidden;
+}
+
+.banner-left-list .list-1 {
+  width: 225px;
+}
+
+/*!hover时出现的div*/
+.banner-show {
+  position: absolute;
+  top: -2px;
+  right: -724px;
+  width: 721px;
+  height: 530px;
+  border: 1px solid red;
+  overflow: hidden;
+  display: none;
+  z-index: 1000;
+  opacity: 1;
+  background: #fff;
+}
+
+.banner-show-list {
+  overflow: hidden;
+  float: left;
+  padding: 10px 0 0 10px;
+  width: 170px;
+  height: 520px;
+}
+
+.bann-img {
+  float: left;
+}
+
+.banner-li {
+  margin: 5px 0 16px 0;
+  width: 160px;
+}
+
+.banner-li dt a {
+  color: #000000;
+  font: bold 14px "Microsoft YaHei" !important;
+}
+
+.banner-li dd a {
+  padding: 5px 5px 0 0;
+  display: inline-block;
+  font: 14px "Microsoft YaHei" !important;
+  overflow: hidden;
+  color: #777777;
+}
+
+.bann-img h3 {
+  margin: 10px 10px;
+}
+
+.bann-img-list {
+  width: 540px;
+  overflow: hidden;
+}
+
+.bann-img-list li {
+  float: left;
+  margin: 10px;
+}
+
+/*!结束*/
+.banner-left-list .list-1 dd a {
+  padding: 5px 5px 0 0;
+  display: inline-block;
+  font: 14px "Microsoft YaHei" !important;
+  overflow: hidden;
+  color: #777777;
+}
+
+.banner-left-list .list-1 dt {
+  width: 214px;
+  height: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.banner-left-list .list-1 dt a {
+  color: #000000;
+  font: bold 14px "Microsoft YaHei" !important;
+}
+
+.list-1 i {
+  font: bolder 14px '微软雅黑';
+  color: red;
+  float: right;
+  margin-right: 8px;
+}
+
+.c-search {
+  padding: 5px 0;
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.c-search input {
+  border: 1px solid #ccc;
+  border-right: none;
+  outline: none;
+  height: 20px;
+}
+
+.c-search span {
+  width: 23px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-left: none;
+  display: block;
+  cursor: pointer;
+  background: url(../images/Veo_mbshop_spirit_pic.png) 3px -370px no-repeat;
+}
+
+.classify-left {
+  width: 180px;
+  height: auto;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.classify-left h2 {
+  width: 100%;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.classify-left li {
+  margin-top: 10px;
+}
+
+.classify-left em {
+  display: inline-block;
+  cursor: pointer;
+  width: 8px;
+  height: 10px;
+  margin-right: 5px;
+  background: url(../images/Veo_mbshop_spirit_pic.png) no-repeat;
+  background-position-x: -9px;
+  background-position-y: -92px;
+}
+
+.classify-left dl {
+  display: none;
+  margin-top: 5px;
+  margin-left: 30px;
+}
+
+.classify-left dl dt {
+  margin-left: -10px;
+  color: #000;
+}
+
+.classify-left dl dt b {
+  cursor: pointer;
+  display: block;
+  width: 10px;
+  float: left;
+  font: 14px/15px "微软雅黑";
+  margin-right: 5px;
+}
+
+.classify-left dl dd {
+  margin-top: 10px;
+  display: none;
+}
