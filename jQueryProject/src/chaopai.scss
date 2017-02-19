@@ -1,0 +1,118 @@
+
+//---侧栏菜单开始 这个是与购买页相同的样式 但和主页有所不同
+.banner-left{
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+    width: 236px;
+    height: 531px;
+    left:0px;
+    z-index: 100;
+    background: #fff;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+.banner-left-list{
+    width: 224px;
+    height: 520px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+.banner-left-list .list-1{
+    width: 225px;
+    }
+    
+/*!hover时出现的div*/
+.banner-show{
+    position: absolute;
+    top:-2px;
+    right: -724px;
+    width: 721px;
+    height: 530px;
+    border: 1px solid red;
+    overflow: hidden;
+    display: none;
+    z-index: 1000;
+    opacity: 1;
+    background: #fff;
+}
+.banner-show-list{
+    overflow: hidden;
+        float: left;
+    padding: 10px 0 0 10px;
+    width: 170px;
+    height: 520px;
+}
+.bann-img{float: left;}
+.banner-li{margin: 5px 0 16px 0;width: 160px;}
+.banner-li dt a{    
+    color: #000000;
+    font: bold 14px "Microsoft YaHei" !important;
+    }
+    .banner-li dd a{
+    padding: 5px 5px 0 0;
+    display: inline-block;
+    font: 14px "Microsoft YaHei" !important;
+    overflow: hidden;
+    color: #777777;
+    }
+
+.bann-img h3{margin: 10px 10px;}
+.bann-img-list{width: 540px;overflow: hidden;}
+.bann-img-list li{float: left;margin: 10px;}
+/*!结束*/
+
+.banner-left-list .list-1 dd a{
+    padding: 5px 5px 0 0;
+    display: inline-block;
+    font: 14px "Microsoft YaHei" !important;
+    overflow: hidden;
+    color: #777777;
+}
+.banner-left-list .list-1 dt{
+    width: 214px;
+    height: 19px;
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+.banner-left-list .list-1 dt a{color: #000000;
+font:bold 14px "Microsoft YaHei" !important;}
+.list-1 i{font:bolder 14px '微软雅黑';color: red;float: right;margin-right: 8px;}
+/*侧栏菜单结束*/
+
+.chaopai-1{
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.chaopai-1>ul>li{
+    width: 230px;
+    height: auto;
+    float: left;
+    display: block;
+    margin: 15px 12px 0 0;
+}
+.chaopai-1 p{
+    margin: 5px 5px;
+}
+.big-img{
+    width: 230px;
+    height: 315px;
+}
+.small-img li{
+    float: left;
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+.small-img img{
+    width: 28px;
+    height: 28px;
+}
+.chaopai-1 .active{
+    border-color: red;
+}
+.small-img li:hover{
+     border-color: red;
+}

@@ -1,0 +1,207 @@
+@charset "UTF-8";
+.banner-left {
+  display: none;
+  position: absolute;
+  padding-top: 10px;
+  width: 236px;
+  height: 531px;
+  left: 0px;
+  z-index: 100;
+  background: #fff;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
+.banner-left-list {
+  width: 224px;
+  height: 520px;
+  padding-left: 10px;
+  overflow: hidden;
+}
+
+.banner-left-list .list-1 {
+  width: 225px;
+}
+
+/*!hover时出现的div*/
+.banner-show {
+  position: absolute;
+  top: -2px;
+  right: -724px;
+  width: 721px;
+  height: 530px;
+  border: 1px solid red;
+  overflow: hidden;
+  display: none;
+  z-index: 1000;
+  opacity: 1;
+  background: #fff;
+}
+
+.banner-show-list {
+  overflow: hidden;
+  float: left;
+  padding: 10px 0 0 10px;
+  width: 170px;
+  height: 520px;
+}
+
+.bann-img {
+  float: left;
+}
+
+.banner-li {
+  margin: 5px 0 16px 0;
+  width: 160px;
+}
+
+.banner-li dt a {
+  color: #000000;
+  font: bold 14px "Microsoft YaHei" !important;
+}
+
+.banner-li dd a {
+  padding: 5px 5px 0 0;
+  display: inline-block;
+  font: 14px "Microsoft YaHei" !important;
+  overflow: hidden;
+  color: #777777;
+}
+
+.bann-img h3 {
+  margin: 10px 10px;
+}
+
+.bann-img-list {
+  width: 540px;
+  overflow: hidden;
+}
+
+.bann-img-list li {
+  float: left;
+  margin: 10px;
+}
+
+/*!结束*/
+.banner-left-list .list-1 dd a {
+  padding: 5px 5px 0 0;
+  display: inline-block;
+  font: 14px "Microsoft YaHei" !important;
+  overflow: hidden;
+  color: #777777;
+}
+
+.banner-left-list .list-1 dt {
+  width: 214px;
+  height: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.banner-left-list .list-1 dt a {
+  color: #000000;
+  font: bold 14px "Microsoft YaHei" !important;
+}
+
+.list-1 i {
+  font: bolder 14px '微软雅黑';
+  color: red;
+  float: right;
+  margin-right: 8px;
+}
+
+/*侧栏菜单结束*/
+/*订单页面开始*/
+.order-left {
+  margin-top: 20px;
+  width: 138px;
+  border: 1px solid #ccc;
+  padding: 0 20px 15px;
+  margin-right: 20px;
+  float: left;
+}
+
+.order-left h3 {
+  margin: 10px;
+}
+
+.order-left ul {
+  margin: 10px 0;
+}
+
+.order-left li {
+  margin: 10px 0;
+}
+
+.order-right {
+  float: left;
+  width: 1000px;
+  margin-top: 25px;
+  overflow: hidden;
+}
+
+.order-right h4 {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.order-news {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 10px 0 10px;
+}
+
+.order-news ul li {
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  padding: 0 20px;
+}
+
+.order-news ul li a {
+  color: #000;
+  font-weight: bold;
+}
+
+.order-l {
+  display: flex;
+  margin-bottom: 11px;
+}
+
+.order-news ul .active {
+  border-bottom: 2px solid #ccc;
+}
+
+.order-news ul li:hover {
+  border-bottom: 2px solid #ccc;
+}
+
+.order-order {
+  display: flex;
+  padding: 20px 30px;
+  border: 1px solid #ccc;
+  margin: 20px 0;
+  justify-content: space-between;
+}
+
+.order-order img {
+  margin: 0 30px;
+}
+
+.buy-now {
+  display: flex;
+}
+
+.buy-now .buy-now-1 a {
+  margin-left: 20px;
+  display: block;
+  word-spacing: 100px;
+  height: 19px;
+  background: red;
+  text-align: center;
+  line-height: 19px;
+  border-radius: 3px;
+  color: #fff;
+}

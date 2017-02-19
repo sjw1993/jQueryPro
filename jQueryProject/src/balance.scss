@@ -1,0 +1,100 @@
+.nav-main{
+    float: right!important;
+  
+}
+.nav-main li a{
+      line-height: 62px;
+}
+
+h3{
+    font: bold 24px "微软雅黑";
+    margin: 20px 10px;
+}
+.balance-1{
+    background: #F8F7F7;
+    display: flex;
+}
+.balance-1 span{
+    display: flex;
+    padding: 10px 65px;
+}
+i{
+    cursor: pointer;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ccc;
+}
+.balance-2{
+    margin: 20px 0;
+}
+.balance-2 span{
+    display: flex;
+    height: 28px;
+//  width: 100%;
+    padding-left: 67px;
+    padding-top: 20px;
+    background: #FDF6EE;
+}
+.a1{
+    padding: 10px 68px;
+    display: flex;
+}
+.a1 dl{
+        width: 350px;
+    height: auto;
+    overflow: hidden;
+}
+.a1 dt{
+    margin: 0 22px;
+    border: 1px solid #ccc;
+    float: left;
+    box-sizing: border-box;
+}
+.a1 dd{
+    width: 206px;
+    height: auto;
+    float: left;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+.a1 em{
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    text-align: left;
+    font-style: normal;
+    color: #999;
+}
+
+.mbshop_cart_1127_b{
+        width: 100%;
+    height: auto;
+    overflow: hidden;
+    line-height: 16px;
+}
+
+.a2{
+    justify-content: space-between;
+    display: flex;
+    margin: 0 50px;
+}
+.a2 span{
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ccc;
+}
+.a2  input{height: 15px;width: 50px;margin: 0 10px;}
+.go-buy{
+    cursor: pointer;
+    display: block;
+    width: 49px;
+    height: 22px;
+    border-radius: 3px;
+    background: red;
+    color:#fff;
+}
