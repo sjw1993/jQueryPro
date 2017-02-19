@@ -104,5 +104,13 @@ $(function(){
 					$('.money').text(sum);
 				}
 			});
+			
+					//将cookie中的值写入页面
+
+			var oNews=JSON.parse(getCookie('goods'));
+					console.log(JSON.parse(getCookie('goods')));
+
+										
+			$('.a1 dt img').attr('src',oNews[0].url[0]);
 
 })

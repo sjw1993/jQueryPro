@@ -78,16 +78,47 @@ $(function(){
 		
 		//购买页代码开始
 		
+		
+		//将cookie中的值写入页面
+		var choseImg = $('.mirror-chose li'),
+			mirrorShow = $('.mirror-show').children('img'),
+			choseBigImg = $('.big-mirror-img').children('img');
+			
+			var oNews=JSON.parse(getCookie('goods'));
+					console.log(JSON.parse(getCookie('goods')));
+					//写姓名
+					var oName=$('.buy-right h1');
+						oName.text(oNews[0].name);
+						//写价格
+						var oPrice=$('.buy-r-1 span').eq(0);
+							oPrice.text(oNews[0].price);
+//						console.log(oNews[0].name);
+						var arrUrl=oNews[0].url;
+							console.log(arrUrl[0]);
+							choseBigImg.attr('src',arrUrl[0]);
+							mirrorShow.attr('src',arrUrl[0]);
+							var oList=$('.mirror-chose ul');
+//								oList.children('li').eq(0).addClass('active');
+						for(var i=0;i<arrUrl.length;i++){
+							var oli=oList.append('<li><img src='+arrUrl[i]+'></li>');
+							;
+						};
+		
+		
+		
+		
 		//放大镜js代码开始
 		
 		var choseImg = $('.mirror-chose li'),
 			mirrorShow = $('.mirror-show').children('img'),
 			choseBigImg = $('.big-mirror-img').children('img');
 //		console.log(choseImg);
-			
+			//当改变数据是cookie写入时 需要借助事件委托
 			choseImg.click(function(){
+				
 				var imgUrl = $(this).children('img').attr('src'),
 					iIndex = $(this).index();
+					console.log(1);
 				choseImg.removeClass('active');
 				choseImg.eq(iIndex).addClass('active');
 				choseBigImg.attr('src',imgUrl);
@@ -121,7 +152,7 @@ $(function(){
 					oBigimg=document.getElementById('bigImg'),
 					oBox=document.getElementById('box');
 					oTop.onmousemove=function(ev){
-						console.log()
+//						console.log()
 						var ev=ev||window.event;
 							iL=ev.clientX-oTop.offsetLeft-oZooms.offsetWidth/2+window.scrollX;
 							iT=ev.clientY-oTop.offsetTop-oZooms.offsetHeight/2+window.scrollY;												
@@ -138,7 +169,7 @@ $(function(){
 							if(iT > oTop.offsetHeight - oZooms.offsetHeight) {
 								iT = oTop.offsetHeight - oZooms.offsetHeight;
 							}
-							console.log(iT)
+//							console.log(iT)
 							//遮罩层位置变化
 							oZooms.style.left=iL+'px';
 							oZooms.style.top=iT+'px';
@@ -158,4 +189,12 @@ $(function(){
 				choseBigImg.attr('src',imgUrl);
 				mirrorShow.attr('src',imgUrl);
 					});
+					
+					
+					
+					
+					
+					//cookie
+					
+				
 })

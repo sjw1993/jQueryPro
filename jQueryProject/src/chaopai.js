@@ -84,13 +84,45 @@ $(function(){
 			
 			change.hover(function(){
 				var oSrc=$(this).children('img').attr('src');
-				console.log(oSrc);
+//				console.log(oSrc);
 				oBig.attr('src',oSrc);
 			},function(){
 				oBig.attr('src','images/cc1.jpg');
-			})
+			});
 	
 	
 	
+	
+	
+		//点击商品 跳转到购买页面 写Cookie
+		
+		var toBuyLi=$('.to-buy').children('li');
+//		var oP     =$('');
+		toBuyLi.click(function(){
+			var iIndex=toBuyLi.index($(this));
+				var oText=$(this).children('p').eq(1).text();
+				var oPrice=$(this).find('span').text();
+				var oUrl  =$(this).children('ul').children('li').children('img');
+				var oUrls =[];
+				var aGoods=[];
+				oUrl.each(function(k){
+					oUrls.push($(this).attr('src'));
+				});
+				
+				var oGoodsNews={
+//							id:goodsId,
+							url:oUrls,
+							name:oText,
+							price:oPrice,
+				};
+				aGoods.push(oGoodsNews);
+				setCookie('goods',JSON.stringify(aGoods));
+				location.href='buy.html';
+//				console.log(oUrls);
+//				console.log(oUrl);
+//				console.log(oPrice);
+//				console.log(oText);
+		});
+		
 	
 })
