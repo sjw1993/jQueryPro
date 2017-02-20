@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="style/login.css"/>
 		<script src="js/jquery.js"></script>
 		<script src="js/login.js"></script>
+		<script src="js/cookie.js"></script>
 	</head>
 	<body>
 		<header class="header clearfix">
@@ -34,9 +35,8 @@
 							<input type="text" index='1'/>
 						</div>
 						<div class="wrap-span">
-							<span class="err-name">
-							请输入账户或邮箱地址
-						</span>
+							<span class="err-name">请输入账户或邮箱地址</span>
+							<span class="err-name1" >您输入的账号不存在！</span>
 						</div>
 						
 						<div class="login-pass">
@@ -44,9 +44,8 @@
 							<input type="text" index='2'/>
 						</div>
 							<div class="wrap-span">
-							<span class="err-pass">
-								请输入登录密码
-							</span>	
+							<span class="err-pass">请输入登录密码</span>	
+							<span class="err-pass1">您输入的密码与账号不匹配！</span>
 							</div>
 					</div>
 					
@@ -100,7 +99,7 @@
 								<input type="checkbox" name="ch" value="" />自动登录
 						</div>
 						<div class="btn-logo">
-							<input type="submit" value=""/>
+							<input type="button" value=""/>
 							<a href="#">找回密码?</a>
 						</div>
 					</form>

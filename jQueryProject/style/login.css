@@ -92,7 +92,7 @@
   line-height: 30px;
 }
 
-.err-name, .err-pass {
+.err-name, .err-pass, .err-name1, .err-pass1 {
   width: 100%;
   display: none;
   text-align: center;

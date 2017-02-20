@@ -281,7 +281,13 @@
   overflow: hidden;
 }
 
+.chimadaxiao .active {
+  background: red;
+  color: #fff;
+}
+
 .chimadaxiao li {
+  cursor: pointer;
   float: left;
   margin-bottom: 10px;
   margin-right: 10px;
@@ -290,6 +296,11 @@
   text-align: center;
   height: 29px;
   border: 1px solid #ccc;
+}
+
+.chimadaxiao li:hover {
+  background: red;
+  color: #fff;
 }
 
 .num {
@@ -322,11 +333,8 @@
   cursor: pointer;
 }
 
-.join a {
-  color: #fff;
-}
-
 .join:hover {
+  color: #fff;
   background: #FF7A72;
 }
 

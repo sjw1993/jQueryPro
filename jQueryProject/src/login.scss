@@ -70,13 +70,14 @@
 }
 .login-pass input{margin-left: 10px;}
 .login-name p{line-height: 30px;}
-.err-name,.err-pass{width: 100%;
+.err-name,.err-pass,.err-name1,.err-pass1{width: 100%;
 display: none;
 text-align: center;margin:0 0 0 10px;color: #666;}
 .wrap-span{
     width: 100%;height: 25px;
     padding: 6px 0 0 0;
 }
+
 .account{display: none;}
 .forms .active{
     display: block;

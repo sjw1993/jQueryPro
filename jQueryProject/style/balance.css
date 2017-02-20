@@ -42,6 +42,10 @@ i {
   background: #FDF6EE;
 }
 
+.del {
+  margin-left: 60px;
+}
+
 .a1 {
   padding: 10px 68px;
   display: flex;

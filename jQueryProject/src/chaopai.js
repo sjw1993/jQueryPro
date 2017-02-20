@@ -105,8 +105,10 @@ $(function(){
 				var oUrl  =$(this).children('ul').children('li').children('img');
 				var oUrls =[];
 				var aGoods=[];
+				
 				oUrl.each(function(k){
 					oUrls.push($(this).attr('src'));
+					
 				});
 				
 				var oGoodsNews={
@@ -119,7 +121,7 @@ $(function(){
 				setCookie('goods',JSON.stringify(aGoods));
 				location.href='buy.html';
 //				console.log(oUrls);
-//				console.log(oUrl);
+				console.log(oUrl);
 //				console.log(oPrice);
 //				console.log(oText);
 		});

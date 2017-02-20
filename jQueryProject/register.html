@@ -9,7 +9,7 @@
 			<link rel="stylesheet" type="text/css" href="style/register.css"/>
 		<script src="js/jquery.js"></script>
 		<script src="js/register.js"></script>
-<!--		<script src="js/register.js"></script>-->
+		<script src="js/cookie.js"></script>
 	</head>
 <body>
 		<header class="header clearfix">
@@ -37,6 +37,8 @@
 								<span>
 								用户名不能为空
 								</span>
+								<span>用户名必须是4-20字符，且格式要正确</span>
+								<span style="color: green;">	可以注册!</span>
 							</p>
 							<!--<p>格式错误</p>-->
 							<!--</div>-->
@@ -51,7 +53,13 @@
 						<div class="reg-text fl">
 							<input type="text" name='phone' class="phone" autocomplete="off"/>
 							<span class="tips">请输入您的手机号码</span>
-							<p class="phonenull">手机号不能为空</p>
+							<p class="phonenotnull"> 
+								<span>
+								手机号不能为空
+								</span>
+								<span>手机号必须是11个数字</span>
+								<span style="color: green;">手机号正确!</span>
+							</p>
 						</div>
 					</div>
 					
@@ -63,7 +71,13 @@
 							<input type="text" class="re-check" name="chk"/>
 							<img src="https://passport.banggo.com:443/CASServer//custom/loginCode.do?time=1486821112587"/>
 							<a href="#">换一张</a>
-							<p>手机号不能为空</p>
+							<p class="checknotnull"> 
+								<span>
+								验证码不能为空
+								</span>
+								<span>请输入右侧正确的验证码</span>
+								<span style="color: green;">验证码正确正确!</span>
+							</p>
 						</div>
 					</div>
 					

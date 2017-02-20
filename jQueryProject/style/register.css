@@ -15,14 +15,15 @@
   color: #fff;
   margin-top: 0;
   line-height: 28px;
-  background: url(../images/buttonSkin.png) 0 -450px no-repeat;
+  background: url("../images/buttonSkin.png") 0 -450px no-repeat;
 }
 
 .reg-main {
   width: 980px;
-  height: 328px;
+  height: auto;
   border: 1px solid #CCCCCC;
   margin-top: 10px;
+  overflow: hidden;
 }
 
 .reg-left {
@@ -49,12 +50,28 @@
 
 .regname {
   overflow: hidden;
-  margin: 12px 0px;
+  margin: 12px 0;
 }
 
 /*验证*/
-#usernamechk, #namenotnull {
-  opacity: 0;
+.namenotnull, .phonenotnull, .checknotnull, .passnotnull, .repassnotnull, .jihuomanotnull {
+  height: 16px;
+}
+
+.namenotnull span {
+  display: none;
+}
+
+.phonenotnull span {
+  display: none;
+}
+
+.checknotnull span {
+  display: none;
+}
+
+.passnotnull span, .repassnotnull span, .jihuomanotnull span {
+  display: none;
 }
 
 .reg-text input {
@@ -71,7 +88,7 @@
 }
 
 .reg-text p {
-  margin: 10px 0 0 0;
+  margin: 10px 0 0;
   color: red;
 }
 
@@ -98,9 +115,21 @@
   display: block;
   width: 152px;
   height: 34px;
-  background: url(../images/buttons.png) -226px -168px no-repeat;
+  background: url("../images/buttons.png") -226px -168px no-repeat;
 }
 
+/*这两个是do-register.html页面设置样式*/
+.send #send-1 {
+  width: 213px;
+  height: 35px;
+  background: url("../images/buttons.png") 0 -84px no-repeat;
+}
+
+.send #send-1:hover {
+  background-position: 0 -126px;
+}
+
+/*这两个是do-register.html页面设置样式*/
 .send .send-1:hover {
   background-position: -226px -210px;
 }
@@ -108,9 +137,10 @@
 .reg-right {
   width: 219px;
   height: 320px;
-  background: url(../images/bgowelcometext.png);
+  background: url("../images/bgowelcometext.png");
 }
 
-.reg-right h3, .reg-right p {
+.reg-right h3,
+.reg-right p {
   display: none;
 }

@@ -85,7 +85,7 @@ $(function(){
 			choseBigImg = $('.big-mirror-img').children('img');
 			
 			var oNews=JSON.parse(getCookie('goods'));
-					console.log(JSON.parse(getCookie('goods')));
+//					console.log(JSON.parse(getCookie('goods')));
 					//写姓名
 					var oName=$('.buy-right h1');
 						oName.text(oNews[0].name);
@@ -94,7 +94,9 @@ $(function(){
 							oPrice.text(oNews[0].price);
 //						console.log(oNews[0].name);
 						var arrUrl=oNews[0].url;
-							console.log(arrUrl[0]);
+						
+							console.log(arrUrl);
+							
 							choseBigImg.attr('src',arrUrl[0]);
 							mirrorShow.attr('src',arrUrl[0]);
 							var oList=$('.mirror-chose ul');
@@ -113,7 +115,6 @@ $(function(){
 			mirrorShow = $('.mirror-show').children('img'),
 			choseBigImg = $('.big-mirror-img').children('img');
 //		console.log(choseImg);
-			//当改变数据是cookie写入时 需要借助事件委托
 			choseImg.click(function(){
 				
 				var imgUrl = $(this).children('img').attr('src'),
@@ -179,11 +180,14 @@ $(function(){
 
 					}
 			
+			var gyanse=$('.yanse li').eq(0).children('img').attr('alt');
 			//放大镜右边颜色 下面的几件小衣服
 				var oyanse=$('.yanse li');
 					oyanse.click(function(){
 						var imgUrl = $(this).children('img').attr('src'),
 					iIndex = $(this).index();
+					
+					gyanse=$(this).children('img').attr('alt');
 					oyanse.removeClass('active');
 					oyanse.eq(iIndex).addClass('active');
 				choseBigImg.attr('src',imgUrl);
@@ -191,10 +195,79 @@ $(function(){
 					});
 					
 					
+					//购买数量
+					var buyNum=1;
+					var jian=$('.num i').eq(0),
+						jia =$('.num i').eq(1),
+						num =$('.num input');
+						var nums;
+//						num.attr('value',nums);
+						jian.click(function(){
+							if(num[0].value<=0){
+								nums=0;
+							}else{
+								nums=Number(num[0].value)-1;
+							}
+							num[0].value=nums;
+							buyNum=num[0].value;
+						});
 					
-					
-					
+					jia.click(function(){
+//						console.log(num.attr('value'));
+							//大于库存时该怎么做
+							if(num[0].value>=121){
+								nums=121;
+							}else{
+								nums=Number(num[0].value)+1;
+							}
+							num[0].value=nums;
+							buyNum=num[0].value;
+						});
 					//cookie
+					var gsize;
+					$('.chimadaxiao li').click(function(){
+						$('.chimadaxiao li').removeClass('active');
+						$(this).addClass('active');
+						gsize=$(this).text();
+					});
+					
+					//加入购物车时的js代码
+					
+					
+					
+					var joinGoods=$('.join');
+						
+						joinGoods.click(function(){
+							var goodsName=$('.buy-right h1').text();
+							var goodsPrice=$('.goodsprice').text();
+							var goodsNum  =buyNum;
+							var goodsSize =gsize;
+							var goodsColor =gyanse;
+							var src      =mirrorShow.attr('src');
+//							console.log(goodsName);
+//							console.log(goodsPrice);
+//							console.log(goodsNum);
+//							console.log(goodsSize);
+//							console.log(goodsColor);
+							var aGoods=getCookie('goodsNews');
+//							console.log(aGoods);
+							if(aGoods === undefined) {
+							var aGoods = []; // aGoods相当于购物车
+							} else {
+								aGoods = JSON.parse(aGoods);
+							}
+							var goodsNews={
+								name:goodsName,
+								price:goodsPrice,
+								num:goodsNum,
+								size:goodsSize,
+								color:goodsColor,
+								src:src
+							}
+							aGoods.push(goodsNews);
+								setCookie('goodsNews',JSON.stringify(aGoods));
+								location.href='balance.html';
+						});
 					
 				
 })
