@@ -86,6 +86,19 @@ $(function(){
 			});
 
 			
+		var aCookie = getCookie('goodsNews');
+			if(aCookie==undefined){
+				return false;
+			}else{
+			var oNews=JSON.parse(getCookie('goodsNews'));
+//					console.log(oNews[0].src);
+			oNews.forEach(function(v){
+//				console.log(v.name);
+			$('#order').append('<div class="order-order"><div style="display: flex;"><div><p>订单编号：<br />14747573838575</p><p>下单时间：<br />2017-2-19 <br />14:23:30</p></div><img src='+v.src+' alt="" /><p>'+v.name+'<br />尺码M:'+v.size+' 颜色：'+v.color+'<br />￥79 x 1</p></div><div class="buy-now"><p>￥'+v.price+' <br /><a href="#">等待支付</a><br /><a href="#">支付宝</a><br />宋佳伟</p><p class="buy-now-1"><a href="#">立即支付</a><br /><a href="#">订单详情</a></p></div></div>');
+
+			});
+			}
+			
 		
 	
 	

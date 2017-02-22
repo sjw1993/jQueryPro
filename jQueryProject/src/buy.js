@@ -84,8 +84,12 @@ $(function(){
 			mirrorShow = $('.mirror-show').children('img'),
 			choseBigImg = $('.big-mirror-img').children('img');
 			
-			var oNews=JSON.parse(getCookie('goods'));
-//					console.log(JSON.parse(getCookie('goods')));
+			var aCookie = getCookie('goods');
+			if(aCookie==undefined){
+				return false;
+			}else{
+					var oNews=JSON.parse(getCookie('goods'));
+					//					console.log(JSON.parse(getCookie('goods')));
 					//写姓名
 					var oName=$('.buy-right h1');
 						oName.text(oNews[0].name);
@@ -105,6 +109,14 @@ $(function(){
 							var oli=oList.append('<li><img src='+arrUrl[i]+'></li>');
 							;
 						};
+					
+				}
+			
+			
+			
+			
+			
+
 		
 		
 		

@@ -1,0 +1,1 @@
+$(function(){var e=$(".log-success li").eq(0).children("a"),s=$(".log-success li").eq(0).children("span"),i=getCookie("user");if(void 0==i)return!1;var n=JSON.parse(getCookie("user"));s.text(n[0].name+",欢迎您"),e.css({display:"none"})});
